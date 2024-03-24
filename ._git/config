@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "old_origin"]
+	url = https://github.com/NvChad/NvChad
+	fetch = +refs/heads/v2.0:refs/remotes/old_origin/v2.0
+[branch "main"]
+	remote = old_origin
+	merge = refs/heads/v2.0
+[user]
+	email = --local
+[remote "origin"]
+	url = git@github.com:schmehla/nvchad-config.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
